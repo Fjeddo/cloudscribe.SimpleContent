@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5243DE57-7C89-4208-8876-405E13605D16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D153CE69-0248-433D-96EC-80557203D54E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Models", "src\cloudscribe.SimpleContent.Models\cloudscribe.SimpleContent.Models.csproj", "{8D2014C8-8699-45A1-A47D-46B392678722}"
 EndProject
@@ -38,6 +41,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceDev.WebApp", "src\sourceDev.WebApp\sourceDev.WebApp.csproj", "{8479648C-E355-4850-B670-764F65C4F3D5}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2446120C-2169-4AA9-9A6E-857E8B6BC4A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudscribe.SimpleContent.Storage.Git", "src\cloudscribe.SimpleContent.Storage.Git\cloudscribe.SimpleContent.Storage.Git.csproj", "{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudscribe.Core.Storage.Git", "src\cloudscribe.Core.Storage.Git\cloudscribe.Core.Storage.Git.csproj", "{F94362A1-B583-4540-BAED-6C379A9DAA46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudscribe.Logging.Git", "src\cloudscribe.Logging.Git\cloudscribe.Logging.Git.csproj", "{000D71DE-445B-4F6D-AF89-EBDA5169D984}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +118,18 @@ Global
 		{2446120C-2169-4AA9-9A6E-857E8B6BC4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2446120C-2169-4AA9-9A6E-857E8B6BC4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2446120C-2169-4AA9-9A6E-857E8B6BC4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94362A1-B583-4540-BAED-6C379A9DAA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94362A1-B583-4540-BAED-6C379A9DAA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94362A1-B583-4540-BAED-6C379A9DAA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94362A1-B583-4540-BAED-6C379A9DAA46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000D71DE-445B-4F6D-AF89-EBDA5169D984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000D71DE-445B-4F6D-AF89-EBDA5169D984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000D71DE-445B-4F6D-AF89-EBDA5169D984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000D71DE-445B-4F6D-AF89-EBDA5169D984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +150,9 @@ Global
 		{9595D935-BB5F-4038-83C5-80D7F943A85E} = {5243DE57-7C89-4208-8876-405E13605D16}
 		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2} = {5243DE57-7C89-4208-8876-405E13605D16}
 		{8479648C-E355-4850-B670-764F65C4F3D5} = {5243DE57-7C89-4208-8876-405E13605D16}
+		{E344CBBB-49B3-4C31-BAE1-64F3DBF9C40B} = {5243DE57-7C89-4208-8876-405E13605D16}
+		{F94362A1-B583-4540-BAED-6C379A9DAA46} = {5243DE57-7C89-4208-8876-405E13605D16}
+		{000D71DE-445B-4F6D-AF89-EBDA5169D984} = {5243DE57-7C89-4208-8876-405E13605D16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {639A2049-869A-4D6D-97CB-2390013AC353}

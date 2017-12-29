@@ -10,10 +10,13 @@ using Microsoft.Extensions.Logging;
 using System.IO;
 using Microsoft.AspNetCore.DataProtection;
 using System.Globalization;
+using cloudscribe.Core.Storage.Git;
+using cloudscribe.Logging.Git;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using cloudscribe.SimpleContent.Models;
+using cloudscribe.SimpleContent.Storage.Git;
 using Microsoft.Extensions.Localization;
 
 namespace sourceDev.WebApp
@@ -322,6 +325,13 @@ namespace sourceDev.WebApp
 
             switch (storage)
             {
+                case "git":
+                    services.AddCloudscribeCoreGitStorage();
+                    services.AddCloudscribeLoggingGitStorage(Configuration);
+                    services.AddGitStorageForSimpleContent();
+
+                    break;
+
                 case "NoDb":
                     services.AddCloudscribeCoreNoDbStorage();
                     // only needed if using cloudscribe logging with NoDb storage

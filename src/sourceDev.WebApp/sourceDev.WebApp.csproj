@@ -27,8 +27,11 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\cloudscribe.Core.Storage.Git\cloudscribe.Core.Storage.Git.csproj" />
+    <ProjectReference Include="..\cloudscribe.Logging.Git\cloudscribe.Logging.Git.csproj" />
     <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.EFCore.MySQL\cloudscribe.SimpleContent.Storage.EFCore.MySQL.csproj" />
     <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.EFCore.pgsql\cloudscribe.SimpleContent.Storage.EFCore.pgsql.csproj" />
+    <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.Git\cloudscribe.SimpleContent.Storage.Git.csproj" />
     <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.NoDb\cloudscribe.SimpleContent.Storage.NoDb.csproj" />
     <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.EFCore.Common\cloudscribe.SimpleContent.Storage.EFCore.Common.csproj" />
     <ProjectReference Include="..\cloudscribe.SimpleContent.Storage.EFCore.MSSQL\cloudscribe.SimpleContent.Storage.EFCore.MSSQL.csproj" />

@@ -50,6 +50,7 @@ namespace sourceDev.WebApp
             var storage = config["DevOptions:DbPlatform"];
             switch (storage)
             {
+                case "git":
                 case "NoDb":
                     CoreNoDbStartup.InitializeDataAsync(services).Wait();
                     break;
